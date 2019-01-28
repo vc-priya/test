@@ -1,0 +1,46 @@
+/* header css */
+a {
+    text-decoration: none;
+    color: white;
+}
+ 
+a:hover, a:active{
+    color: lightgray;
+}
+ 
+.navigation-items{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+ 
+mat-toolbar{
+    border-radius: 3px;
+}
+ 
+@media(max-width: 959px){
+    mat-toolbar{
+        border-radius: 0px;
+    }
+}
+/* sidebar css */
+a {
+    text-decoration: none;
+    color: white;
+}
+ 
+a:hover, a:active{
+    color: lightgray;
+}
+ 
+.nav-caption{
+    display: inline-block;
+    padding-left: 6px;
+}
+
+/* footer css */
+
+.example1{
+    position: fixed;
+    bottom:0px;
+}

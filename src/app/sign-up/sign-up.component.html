@@ -1,0 +1,52 @@
+<h1>Registration!!!</h1>
+<form [formGroup]="regForm">
+    <mat-form-field class="RegForm-full-width">
+        <input formControlName="fname" matInput placeholder="FirstName" required>
+    </mat-form-field>
+    <div>
+        <mat-form-field class="RegForm-full-width">
+            <input formControlName="lname" matInput placeholder="LastName" required>
+        </mat-form-field>
+    </div>
+    <div>
+        <mat-form-field class="RegForm-full-width">
+            <input formControlName="email" matInput placeholder="Email" required>
+        </mat-form-field>
+    </div>
+    <div>
+        <mat-form-field class="RegForm-full-width">
+            <input formControlName="pass" matInput type="password" placeholder="Password" required>
+        </mat-form-field>
+    </div>
+    <div>
+        <mat-form-field class="RegForm-full-width">
+            <input formControlName="cpass" matInput type="password" placeholder="Confirm Password" required>
+        </mat-form-field>
+    </div>
+    <div>
+        <label>Gender: </label>
+        <mat-radio-group formControlName="gender" >
+            <mat-radio-button value="Female">Female</mat-radio-button>
+            <mat-radio-button value="Male">Male</mat-radio-button>
+        </mat-radio-group>
+    </div><br>
+    <label>Qulification:</label>
+    <mat-form-field class="RegForm-full-width">
+        <select matNativeControl required>
+            <option value="10th">10th</option>
+            <option value="12th">12th</option>
+            <option value="Bechlour">Bechlour</option>
+            <option value="Master">Master</option>
+        </select>
+    </mat-form-field><br>
+
+    <div>
+
+        <button mat-button (click)="submit()">Submit</button>
+        <button mat-button (click)="login('succsessfully sign-up','sign-up')">Login</button>
+
+    </div>
+
+
+
+</form>

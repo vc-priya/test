@@ -1,0 +1,20 @@
+<!-- <app-header (sidenavToggle)="sidenav.toggle()"></app-header>
+<app-sidebar></app-sidebar>
+<app-toolbar></app-toolbar>
+<router-outlet></router-outlet>
+<app-footer></app-footer> -->
+
+
+    <mat-sidenav-container>
+      <mat-sidenav #sidenav role="navigation">
+        <app-sidebar (sidenavClose)="sidenav.close()"></app-sidebar>
+      </mat-sidenav>
+      <mat-sidenav-content>
+       <app-header (sidenavToggle)="sidenav.toggle()"></app-header>
+        <main>
+          <router-outlet></router-outlet>
+        </main>
+        <app-footer></app-footer>
+      </mat-sidenav-content>
+    </mat-sidenav-container>
+ 

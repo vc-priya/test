@@ -1,0 +1,18 @@
+<h1>Login!!!</h1>
+<form [formGroup]="regForm">
+    <div>
+        <mat-form-field class="RegForm-full-width">
+            <input formControlName="email" matInput placeholder="Email" value="" required>
+        </mat-form-field>
+    </div>
+    <div>
+        <mat-form-field class="RegForm-full-width">
+            <input formControlName="pass" matInput type="password" placeholder="Password" value="" required>
+        </mat-form-field>
+    </div>
+    <div>
+        <button mat-button (click)="submit()" value="login">Submit</button>
+        <button mat-button (click)="Back()">Back</button>
+    </div>
+
+</form>
